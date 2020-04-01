@@ -9,7 +9,7 @@ h1 {
     font-size: 35px;
 }
 
-.container-header {
+header {
     height: 67vh;
     width: 100vw; 
 
@@ -25,7 +25,7 @@ h1 {
 }
     
 
-   .description{
+   .header-content{
         border: solid red;
         padding-left: 10%;
         padding-right: 60%;
