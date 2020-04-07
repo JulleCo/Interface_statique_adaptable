@@ -1,34 +1,251 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Light.ttf') format('truetype');
+}
+  
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-p{
-    font-size: 8px;
+    font-family: 'Open Sans';
+    font-weight: 100;
 }
 h1 {
-    font-size: 35px;
+    font-size: 33px;
+}
+h2{
+    font-size: 19px;
+}
+h3{
+    font-size: 15px;
+}
+h4{
+    font-size: 9px;
+}
+p{
+    font-size: 9px;
+}
+a{
+    font-size: 9px;
 }
 
-header {
-    height: 67vh;
-    width: 100vw; 
-
-    background-image: url('/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/mastehead.jpg') no-repeat center center/cover;
-    background-size: 250%;
-
+.main-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-
-    border: solid blue;
-    background-color: grey;
+    align-content: stretch ;
 }
-    
 
-   .header-content{
-        border: solid red;
-        padding-left: 10%;
-        padding-right: 60%;
-        padding-bottom: 20%;
-        /*color: white;*/
-   }
+/* HEADER */
+header {
+    height: 59vh;
+    background-image: url('../images/mastehead.jpg');
+    background-position :center;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+} 
+header .nav-logo{
+    color: white;
+    padding-left: 3%;
+    margin-top: 2%;
+}
+header .nav-logo cite{
+    font-size: 13px;
+}
+
+header .header-contenu{
+    color: white;
+    font-weight: 100;
+    padding-left: 10%;
+    padding-right: 60%;
+    padding-bottom: 20%;
+}   
+
+/* SECTION PRINCIPALE */
+main{
+    width: 360px;
+    height: 210vh;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: white;
+}
+main .box1{
+    width: 83%;
+    height: 42vh;
+    background-color:white;
+}
+main .box1 p{
+    color:#b3b3b3;
+}
+
+
+main .box2{
+    width: 83%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: lightseagreen;
+}
+main .box2 p {
+    font-size: 7px;
+}
+main .box2 a img{
+    height: 10%;
+}
+main .box2 a{
+    text-decoration: none;
+}
+main .box2 .box2-design{
+    height:17vh;
+    padding-left: 9%;
+    background-color: #f4979f;
+}
+main .box2 .box2-built{
+    height:17vh;
+    padding-left: 9%;
+    background-color: #605f7f;
+}
+main .box2 .box2-clients{
+    height:17vh;
+    padding-left: 9%;
+    background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg.jpg);  
+    background-position :left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .box2 .box2-signup{
+    height:17vh;
+    padding-left: 9%;
+    background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg-lg.jpg);  
+    background-position :left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .box2 .box2-pictures{
+    height:17vh;
+    padding-left: 9%;
+    background-color: #84c99d;  
+}
+
+main .box3{
+    width: 83%;
+    height: 67vh;
+
+    background-color: white;
+}
+main .box3 p {
+    color:#b3b3b3;
+}
+main .box3 h2{
+    color: #3e3d41;
+}
+
+
+/* SECTION POWER */
+.module1{
+    width: 100%;
+    height: 63vh;
+
+    background-image: url(../images/full-image.jpg);
+    background-position :left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: maroon;
+}
+.module1 .module-contenu{
+    width: 70%;
+    color: white;
+    padding-left: 10%;
+    padding-top: 17%;
+}
+.module1 .module-contenu p {
+    font-size: 8px;
+}
+
+/* SECTION REASONS TO GET */
+.module2{
+    width: 100%;
+    height: 60vh;
+    padding-top: 13%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    background-color:#84c99d;
+}
+.module2 h2{
+    padding-left: 10%;
+}
+.module2 .module2-webbased{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.module2 .module2-login{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.module2 .module2-support{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* SECTION ACHAT */
+.module3{
+    width: 100%;
+    height: 68vh;
+    padding-top: 7%;
+    padding-bottom: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+.module3 h2{
+    color: #3e3d41;
+}
+.module3 .module3-solo{
+    padding-left: 10%;
+    color: #b3b3b3;
+}
+.module3 .module3-plan{
+    padding-left: 10%;
+    color: #b3b3b3;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 55vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #182432;
+}
+footer li{
+    font-size: 9px;
+}
+footer .intouch{
+    height: 10vh;
+    padding-left: 10%;
+}
+footer .mail-box{
+    height: 7vh;
+    padding-left: 10%;
+}
+footer .footer-list{
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
