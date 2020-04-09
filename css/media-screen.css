@@ -1,0 +1,109 @@
+@media screen and (min-width: 768px){
+h1 {
+    font-size: 47px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 12px;
+}
+p, a{
+    font-size: 12px;
+}
+
+header{
+    height: 77vh;
+} 
+
+main{
+    width: 100%;
+    height: 170vh;
+}
+main .box1{
+    height: 42vh;
+    width: 83%;
+    padding-right: 5%;
+    padding-left: 13%;
+    padding-bottom: 20%;
+}
+main .box1 .somethingNew{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+main .box1 .somethingNew p{
+    width: 50%;
+    padding-right: 5%;
+}
+main .box2{
+    width: 83%;
+    color: white;
+    padding-bottom: 8%;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+main .box2 .box2-design, main .box2 .box2-built, main .box2 .box2-clients, main .box2 .box2-signup{
+    height:21vh;
+    width: 32%;
+}
+main .box2 .box2-pictures{
+    height:21vh; 
+    width: 100%;
+}
+.box3-paragraphes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
+    width: 50%;
+}
+
+.module1{
+    height: 73vh;
+}
+.module1 .module-contenu{
+    width: 33%;
+    padding-left: 13%;
+    padding-top: 12%;
+}
+.module1 .module-contenu p {
+    font-size: 11px;
+}
+
+.module2{
+    height: 46vh;
+    padding-top: 12%;
+    padding-left:3%;
+}
+.module2 h2{
+    padding-left: ;
+}
+.module2-paragraphes{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.module2 .module2-webbased, .module2 .module2-login, .module2 .module2-support {
+    width: 30%;  
+}
+
+
+
+      
+}
+
+
+/* -------- FORMAT LAPTOP ---------- */
+@media screen and (min-width: 1280px) {
+
+
+}

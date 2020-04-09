@@ -64,7 +64,7 @@ header .header-contenu{
 
 /* SECTION PRINCIPALE */
 main{
-    width: 360px;
+    width: 100%;
     height: 210vh;
 
     padding-top: 5%;
@@ -80,6 +80,8 @@ main .box1{
     width: 83%;
     height: 42vh;
     background-color:white;
+    display: flex;
+    flex-direction: column;
 }
 main .box1 p{
     color:#b3b3b3;
@@ -88,7 +90,6 @@ main .box1 p{
 
 main .box2{
     width: 83%;
-    height: 80vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -98,33 +99,34 @@ main .box2{
 main .box2 p {
     font-size: 7px;
 }
-main .box2 a img{
-    height: 10%;
-}
 main .box2 a{
     text-decoration: none;
 }
 main .box2 .box2-design{
     height:17vh;
     padding-left: 9%;
+    padding-right: 9%;
     background-color: #f4979f;
 }
 main .box2 .box2-built{
     height:17vh;
     padding-left: 9%;
+    padding-right: 9%;
     background-color: #605f7f;
 }
 main .box2 .box2-clients{
     height:17vh;
     padding-left: 9%;
+    padding-right: 9%;
     background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg.jpg);  
-    background-position :left;
+    background-position :top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 main .box2 .box2-signup{
     height:17vh;
     padding-left: 9%;
+    padding-right: 9%;
     background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg-lg.jpg);  
     background-position :left;
     background-repeat: no-repeat;
@@ -133,37 +135,30 @@ main .box2 .box2-signup{
 main .box2 .box2-pictures{
     height:17vh;
     padding-left: 9%;
+    padding-right: 9%;
     background-color: #84c99d;  
 }
 
 main .box3{
     width: 83%;
-    height: 67vh;
-
+    height: 61vh;
     background-color: white;
 }
-main .box3 p {
-    color:#b3b3b3;
-}
-main .box3 h2{
-    color: #3e3d41;
-}
+
 
 
 /* SECTION POWER */
 .module1{
     width: 100%;
     height: 63vh;
-
     background-image: url(../images/full-image.jpg);
     background-position :left;
     background-repeat: no-repeat;
     background-size: cover;
-
-    background-color: maroon;
+    background-color: rgb(4, 121, 121);
 }
 .module1 .module-contenu{
-    width: 70%;
+    width: 80%;
     color: white;
     padding-left: 10%;
     padding-top: 17%;
@@ -175,28 +170,22 @@ main .box3 h2{
 /* SECTION REASONS TO GET */
 .module2{
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     padding-top: 13%;
-    display: flex;
-    flex-direction: column;
     color:white;
     background-color:#84c99d;
 }
 .module2 h2{
     padding-left: 10%;
 }
-.module2 .module2-webbased{
+.module2-paragraphes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     padding-left: 10%;
     padding-right: 10%;
 }
-.module2 .module2-login{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.module2 .module2-support{
-    padding-left: 10%;
-    padding-right: 10%;
-}
+
 
 /* SECTION ACHAT */
 .module3{
@@ -206,7 +195,7 @@ main .box3 h2{
     padding-bottom: 13%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: white;
 }
 .module3 h2{
@@ -214,11 +203,55 @@ main .box3 h2{
 }
 .module3 .module3-solo{
     padding-left: 10%;
+    padding-right: 10%;
     color: #b3b3b3;
 }
 .module3 .module3-plan{
     padding-left: 10%;
+    padding-right: 10%;
     color: #b3b3b3;
+}
+.module3 .button-green{
+    width: 70px;
+    height: 22px;
+    font-size: 7px;
+    color: white;
+    border-radius: 4px;
+    background-color: #7BCC9C;
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+}
+.module3 .button-grey{
+    width: 50px;
+    height: 22px;
+    font-size: 7px;
+    color: white;
+    border-radius: 4px;
+    background-color: #e2e2e2;
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+    }
+.module3 .button-pink{
+    width: 78px;
+    height: 22px;
+    font-size: 7px;
+    color: white;
+    border-radius: 4px;
+    background-color: #bd8cbe;
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+}
+.module3 .button-pink:hover {
+    opacity:0.7;
+}
+.module3 .button-grey:hover {
+    opacity:0.7;
+}
+.module3 .button-green:hover {
+    opacity:0.7;
 }
 
 /* FOOTER */
@@ -232,20 +265,50 @@ footer{
 
     background-color: #182432;
 }
-footer li{
-    font-size: 9px;
-}
 footer .intouch{
     height: 10vh;
     padding-left: 10%;
+    padding-right: 10%;
 }
 footer .mail-box{
-    height: 7vh;
+    height: 14vh;
     padding-left: 10%;
+}
+footer .mail-box .case-email{
+    display: flex;
+    flex-direction: row;
+}
+footer .mail-box .case-email .text-email{
+    height: 3vh;
+    width: 80%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    background-color: white;
+}
+footer .mail-box .case-email .validation-email{
+    height: 3vh;
+    width: 8%;
+    text-align: center;
+    text-decoration: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #84c99d;
+}
+footer .mail-box .case-email .validation-email:hover {
+    opacity:0.7;
+}
+footer .mail-box p{
+    font-size: 7px;
+    color: #55616f;
 }
 footer .footer-list{
     height: 18vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+footer li{
+    font-size: 9px;
+    list-style-type: none;
 }
