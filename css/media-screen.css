@@ -1,6 +1,6 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width:1024px){
 h1 {
-    font-size: 47px;
+    font-size: 45px;
 }
 h2{
     font-size: 27px;
@@ -18,10 +18,11 @@ p, a{
 header{
     height: 77vh;
 } 
-
+header .img-iphone{
+    display: none;
+}
 main{
-    width: 100%;
-    height: 170vh;
+    height: 100%;
 }
 main .box1{
     height: 42vh;
@@ -41,7 +42,6 @@ main .box1 .somethingNew p{
 }
 main .box2{
     width: 83%;
-    color: white;
     padding-bottom: 8%;
     display: flex;
     flex-flow: wrap;
@@ -57,6 +57,9 @@ main .box2 .box2-pictures{
     height:21vh; 
     width: 100%;
 }
+.box3{
+    height: 100%;
+}
 .box3-paragraphes {
     display: flex;
     flex-direction: row;
@@ -67,10 +70,11 @@ main .box2 .box2-pictures{
 }
 
 .module1{
-    height: 73vh;
+    height: 100vh;
 }
 .module1 .module-contenu{
     width: 33%;
+    height: 80%;
     padding-left: 13%;
     padding-top: 12%;
 }
@@ -79,12 +83,9 @@ main .box2 .box2-pictures{
 }
 
 .module2{
-    height: 46vh;
+    height: 100%;
     padding-top: 12%;
-    padding-left:3%;
-}
-.module2 h2{
-    padding-left: ;
+    padding-bottom: 12%;
 }
 .module2-paragraphes{
     width: 70%;
@@ -96,14 +97,181 @@ main .box2 .box2-pictures{
     width: 30%;  
 }
 
-
-
-      
+.module3{
+    height: 40vh;
+    padding-top: 7%;
+    padding-bottom: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}     
 }
 
 
 /* -------- FORMAT LAPTOP ---------- */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+h1 {
+    font-size: 42px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 12px;
+}
+p, a{
+    font-size: 12px;
+}
 
+header{
+    height: 77vh;
+} 
+header .img-iphone{
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+
+}
+main{
+    height: 100%;
+}
+main .box1{
+    height: 42vh;
+    width: 83%;
+    padding-right: 5%;
+    padding-left: 13%;
+    padding-bottom: 3%;
+}
+main .box1 .somethingNew{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+main .box1 .somethingNew p{
+    width: 50%;
+    padding-right: 5%;
+}
+
+main .box2{
+    width: 83%;
+    padding-bottom: 8%;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+}
+main .box2 .box2-design, main .box2 .box2-built, main .box2 .box2-clients, main .box2 .box2-pictures{
+    height:30vh;
+    width: 26%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+main .box2 .box2-signup{
+    height:30vh; 
+    width: 56%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.box3 {
+    height: 100vh;
+}
+.box3-paragraphes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box3 h2{
+    padding-left: 5%;
+}
+.box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
+    width: 22.5%;
+}
+
+.module1{
+    height: 100vh;
+
+}
+.module1 .module-contenu{
+    width: 33%;
+    padding-left: 13%;
+    padding-top: 8%;
+}
+.module1 .module-contenu p {
+    font-size: 11px;
+}
+
+.module2{
+    height: 100%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+}
+.module2-paragraphes{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: turquoise;
+}
+.module2 .module2-webbased, .module2 .module2-login, .module2 .module2-support {
+    width: 30%;  
+}
+
+.module3 {
+    height: 100%;
+    padding-top: 7%;
+    padding-bottom: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+.module3-solo{
+    width: 20%; 
+}
+.module3-plan{
+    width: 20%;
+}
+.module3 .module3-solo:hover{
+    width: 20%;
+    border-radius: 3px;
+    -webkit-box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+    -moz-box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+    box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+}
+.module3 .module3-plan:hover{
+    width: 20%;
+    border-radius: 3px;
+    -webkit-box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+    -moz-box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+    box-shadow: -3px 4px 14px 4px rgba(0,0,0,0.59);
+}
+
+footer{
+    height:60vh;
+}
+footer .restez-en-contact{
+    width: 80vw;
+    height: 20vh;
+    padding-left: 1.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .restez-en-contact .mail-box .case-email .text-email{
+    width: 25vw;
+}
+footer .footer-list{
+
+}
+footer .footer-list li{
+    font-size: 12px;
+}
 
 }

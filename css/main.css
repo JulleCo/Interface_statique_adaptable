@@ -45,6 +45,9 @@ header {
     justify-content: space-between;
     background-color: grey;
 } 
+header .img-iphone{
+    display: none;
+}
 header .nav-logo{
     color: white;
     padding-left: 3%;
@@ -211,6 +214,10 @@ main .box3{
     padding-right: 10%;
     color: #b3b3b3;
 }
+.module3 svg{
+    height:12%;
+    width: 12%;
+}
 .module3 .button-green{
     width: 70px;
     height: 22px;
@@ -280,10 +287,9 @@ footer .mail-box .case-email{
 }
 footer .mail-box .case-email .text-email{
     height: 3vh;
-    width: 80%;
+    width: 70vw;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-
     background-color: white;
 }
 footer .mail-box .case-email .validation-email{
