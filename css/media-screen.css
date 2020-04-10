@@ -133,8 +133,8 @@ header{
 header .img-iphone{
     display: inline-block;
     position: absolute;
-    top: 250px;
-    left: 650px;
+    top: 220px;
+    left: 620px;
 
 }
 main{
@@ -144,7 +144,7 @@ main .box1{
     height: 42vh;
     width: 83%;
     padding-right: 5%;
-    padding-left: 13%;
+    padding-left: 10%;
     padding-bottom: 3%;
 }
 main .box1 .somethingNew{
@@ -161,7 +161,7 @@ main .box2{
     width: 83%;
     padding-bottom: 8%;
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     background-color: white;
@@ -185,22 +185,21 @@ main .box2 .box2-signup{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .box3 h2{
     padding-left: 5%;
 }
 .box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
-    width: 22.5%;
+    width: 22%;
 }
 
 .module1{
     height: 100vh;
-
 }
 .module1 .module-contenu{
     width: 33%;
-    padding-left: 13%;
+    padding-left: 10%;
     padding-top: 8%;
 }
 .module1 .module-contenu p {
@@ -217,7 +216,6 @@ main .box2 .box2-signup{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: turquoise;
 }
 .module2 .module2-webbased, .module2 .module2-login, .module2 .module2-support {
     width: 30%;  
