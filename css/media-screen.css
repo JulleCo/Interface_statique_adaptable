@@ -11,7 +11,7 @@ h3{
 h4{
     font-size: 12px;
 }
-p, a{
+p {
     font-size: 12px;
 }
 
@@ -133,7 +133,7 @@ h3{
 h4{
     font-size: 12px;
 }
-p, a{
+p{
     font-size: 12px;
 }
 
@@ -147,9 +147,9 @@ header .img-iphone{
     display: inline-block;
     position: absolute;
     top: 220px;
-    left: 620px;
-
+    left: 50%;
 }
+
 main{
     height: 100%;
 }
@@ -194,19 +194,19 @@ main .box2 .box2-signup{
     padding-left: 2%;
     padding-right: 2%;
 }
-.box3 {
+main .box3 {
     height: 100vh;
 }
-.box3-paragraphes {
+main .box3-paragraphes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.box3 h2{
+main .box3 h2{
     padding-left: 2%;
 }
-.box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
+main .box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
     width: 22%;
 }
 
@@ -282,9 +282,6 @@ footer .restez-en-contact{
 footer .restez-en-contact .mail-box .case-email .text-email{
     width: 25vw;
 }
-
 footer .footer-list li{
     font-size: 12px;
-}
-
 }

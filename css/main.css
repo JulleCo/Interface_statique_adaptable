@@ -23,10 +23,9 @@ h4{
 p{
     font-size: 9px;
 }
-a{
+/* a{
     font-size: 9px;
-    text-decoration: none;
-}
+} */
 
 .main-container{
     display: flex;
@@ -166,6 +165,9 @@ main .box3{
 }
 .module1 .module-contenu p {
     font-size: 8px;
+}
+.module1 .module-contenu a{
+    font-size: 9px;
 }
 
 /* SECTION REASONS TO GET */
