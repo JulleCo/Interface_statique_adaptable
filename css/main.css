@@ -25,6 +25,7 @@ p{
 }
 a{
     font-size: 9px;
+    text-decoration: none;
 }
 
 .main-container{
@@ -102,9 +103,6 @@ main .box2{
 main .box2 p {
     font-size: 7px;
 }
-main .box2 a{
-    text-decoration: none;
-}
 main .box2 .box2-design{
     height:17vh;
     padding-left: 9%;
@@ -121,7 +119,7 @@ main .box2 .box2-clients{
     height:17vh;
     padding-left: 9%;
     padding-right: 9%;
-    background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg.jpg);  
+    background-image: url(/Users/ColineX/Documents/SIMPLON/P3_C2_Interface_statique_adaptable/images/box-bg.jpg);  
     background-position :top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,7 +128,7 @@ main .box2 .box2-signup{
     height:17vh;
     padding-left: 9%;
     padding-right: 9%;
-    background-image: url(/Users/ColineX/Desktop/P3_C2_Interface_statique_adaptable/images/box-bg-lg.jpg);  
+    background-image: url(/Users/ColineX/Documents/SIMPLON/P3_C2_Interface_statique_adaptable/images/box-bg-lg.jpg);  
     background-position :left;
     background-repeat: no-repeat;
     background-size: cover;

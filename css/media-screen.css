@@ -18,9 +18,13 @@ p, a{
 header{
     height: 77vh;
 } 
+header .header-contenu{
+    padding-left: 12%;
+}
 header .img-iphone{
     display: none;
 }
+
 main{
     height: 100%;
 }
@@ -28,7 +32,7 @@ main .box1{
     height: 42vh;
     width: 83%;
     padding-right: 5%;
-    padding-left: 13%;
+    padding-left: 12%;
     padding-bottom: 20%;
 }
 main .box1 .somethingNew{
@@ -40,9 +44,13 @@ main .box1 .somethingNew p{
     width: 50%;
     padding-right: 5%;
 }
+main .box1 .somethingNew .sous-iphone{
+    padding-top: 10%;
+}
 main .box2{
     width: 83%;
     padding-bottom: 8%;
+    padding-left: 6%;
     display: flex;
     flex-flow: wrap;
     flex-direction: row;
@@ -57,16 +65,17 @@ main .box2 .box2-pictures{
     height:21vh; 
     width: 100%;
 }
-.box3{
+main .box3{
     height: 100%;
+    padding-left: 6%;
 }
-.box3-paragraphes {
+main .box3-paragraphes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
-    width: 50%;
+main .box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
+    width: 49%;
 }
 
 .module1{
@@ -75,7 +84,7 @@ main .box2 .box2-pictures{
 .module1 .module-contenu{
     width: 33%;
     height: 80%;
-    padding-left: 13%;
+    padding-left: 11%;
     padding-top: 12%;
 }
 .module1 .module-contenu p {
@@ -109,7 +118,8 @@ main .box2 .box2-pictures{
 }
 
 
-/* -------- FORMAT LAPTOP ---------- */
+/* ----------------- FORMAT LAPTOP -------------------- */
+
 @media screen and (min-width: 1024px) {
 h1 {
     font-size: 42px;
@@ -130,6 +140,9 @@ p, a{
 header{
     height: 77vh;
 } 
+header .header-contenu{
+    padding-left: 10%;
+}
 header .img-iphone{
     display: inline-block;
     position: absolute;
@@ -144,7 +157,7 @@ main .box1{
     height: 42vh;
     width: 83%;
     padding-right: 5%;
-    padding-left: 10%;
+    padding-left: 8.5%;
     padding-bottom: 3%;
 }
 main .box1 .somethingNew{
@@ -156,9 +169,12 @@ main .box1 .somethingNew p{
     width: 50%;
     padding-right: 5%;
 }
+main .box1 .somethingNew .sous-iphone{
+    padding-top: 4%;
+}
 
 main .box2{
-    width: 83%;
+    width: 88%;
     padding-bottom: 8%;
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +204,7 @@ main .box2 .box2-signup{
     justify-content: space-evenly;
 }
 .box3 h2{
-    padding-left: 5%;
+    padding-left: 2%;
 }
 .box3-based, .box3-performance, .box3-cultural, .box3-sustainability{
     width: 22%;
@@ -253,6 +269,7 @@ main .box2 .box2-signup{
 
 footer{
     height:60vh;
+    padding-left: 1%;
 }
 footer .restez-en-contact{
     width: 80vw;
@@ -265,9 +282,7 @@ footer .restez-en-contact{
 footer .restez-en-contact .mail-box .case-email .text-email{
     width: 25vw;
 }
-footer .footer-list{
 
-}
 footer .footer-list li{
     font-size: 12px;
 }
