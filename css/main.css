@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('../font/OpenSans-Light.ttf') format('truetype');
+  src: url('/font/OpenSans-Light.ttf') format('truetype');
 }
   
 body {
@@ -36,7 +36,7 @@ p{
 /* HEADER */
 header {
     height: 59vh;
-    background-image: url('../images/mastehead.jpg');
+    background-image: url('/images/mastehead.jpg');
     background-position :center;
     background-repeat: no-repeat ;
     background-size: cover ;
@@ -69,14 +69,12 @@ header .header-contenu{
 main{
     width: 100%;
     height: 210vh;
-
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
     background-color: white;
 }
 main .box1{
@@ -118,7 +116,8 @@ main .box2 .box2-clients{
     height:17vh;
     padding-left: 9%;
     padding-right: 9%;
-    background-image: url(/Users/ColineX/Documents/SIMPLON/P3_C2_Interface_statique_adaptable/images/box-bg.jpg);  
+    background-image: url(/images/box-bg.jpg);  
+    background-color: cadetblue;
     background-position :top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,7 +126,8 @@ main .box2 .box2-signup{
     height:17vh;
     padding-left: 9%;
     padding-right: 9%;
-    background-image: url(/Users/ColineX/Documents/SIMPLON/P3_C2_Interface_statique_adaptable/images/box-bg-lg.jpg);  
+    background-image: url(/images/box-bg-lg.jpg);  
+    background-color: #bd8cbe ;
     background-position :left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +151,7 @@ main .box3{
 .module1{
     width: 100%;
     height: 63vh;
-    background-image: url(../images/full-image.jpg);
+    background-image: url(/images/full-image.jpg);
     background-position :left;
     background-repeat: no-repeat;
     background-size: cover;
